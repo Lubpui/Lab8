@@ -15,7 +15,6 @@ class merge:
             j = 0
 
             while True:
-
                 if len(listLeft) < i and len(listRight) < j:
                     break
                 elif len(listLeft) == i and len(listRight) > j:
@@ -35,17 +34,14 @@ class merge:
                     i += 1
             print(self.mergeList)
 
-
         rangeList = len(listVal)
 
         if rangeList % 2 == 1:
             mid = int(rangeList / 2) + 1
             cal(mid)
-
         else:
             mid = int(rangeList / 2)
             cal(mid)
-
 
 listVal = [29,10,14,37,14,20,7,16,12]
 m = merge()

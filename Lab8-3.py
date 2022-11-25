@@ -12,8 +12,6 @@ class hoare:
             while self.hoareList[i] <= self.hoareList[self.pivot]:
                 i += 1
             while self.hoareList[j] >= self.hoareList[self.pivot]:
-                if j == self.pivot:
-                    break
                 j -= 1
 
             print(self.hoareList)
@@ -34,3 +32,4 @@ listVal = [29,10,14,37,14,20,7,16,12]
 print(listVal)
 h = hoare(listVal)
 h.calculate()
+

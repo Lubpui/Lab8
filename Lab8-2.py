@@ -10,8 +10,6 @@ class lomuto:
 
         if self.lomutoList[0] >= self.lomutoList[self.pivot]:
             self.lomutoList[0],self.lomutoList[self.pivot] = self.lomutoList[self.pivot],self.lomutoList[0]
-
-        print(self.lomutoList[self.pivot])
         print(self.lomutoList)
 
         for i in range(self.pivot):
